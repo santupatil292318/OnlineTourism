@@ -30,7 +30,7 @@ public class CreateOrganizationWithIndustryAndTypeTest extends BaseClass{
 
 		//click on organization link
 		HomePage homepage =new HomePage(driver);
-		homepage.getOrganisationsLnk().click();
+//		homepage.getOrganisationsLnk().click();
 
 		//click on create organization icon
 		OrganisationPage organisationPage= new OrganisationPage(driver);

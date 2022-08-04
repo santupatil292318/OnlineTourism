@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.crm.objectRepository.AdminLoginPage;
+import com.crm.objectRepository.AdminPage;
 import com.crm.objectRepository.HomePage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -104,20 +104,20 @@ public class BaseClass
 			e.printStackTrace();
 		}
 
-		AdminLoginPage lpage=new AdminLoginPage(driver);
-		lpage.loginToAppli(USERNAME, PASSWORD);
+		AdminPage lpage=new AdminPage(driver);
+		lpage.loginToApp(USERNAME, PASSWORD);
 		System.out.println("Login successful");
 	}
 	/**
 	 * logout from application
 	 */
 	@AfterMethod
-	public void logoutFromAppln()
-	{
-		HomePage hpage=new HomePage(driver);
-		hpage.logout(driver);
-		System.out.println("Logout successful");
-	}
+//	public void logoutFromAppln()
+//	{
+//		HomePage hpage=new HomePage(driver);
+//		hpage.logout(driver);
+//		System.out.println("Logout successful");
+//	}
 	/**
 	 * close the browser
 	 */
