@@ -2,25 +2,35 @@ package com.crm.objectRepository;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-	//declaretion
-	@FindAll({@FindBy(xpath = "//input[@type='text']"),@FindBy(name = "user_n")})
-	//@FindBys({@FindBy(xpath = "//input[@type='text']"),@FindBy(name = "user_name")})
+/**
+ * 
+ * @author Santosh Patil
+ *
+ */
+public class AdminPage {
+	//declaration
+
+	@FindBy(name = "username")
 	private WebElement usernametxtEdt;
 
-	@FindBy(name = "user_password")
+	@FindBy(name = "password")
 	private WebElement passwordtxtEdt;
 
 
-	@FindBy(id = "submitButton")
+	@FindBy(name = "login")
 	private WebElement submitBtn;
+	
+	@FindBy(linkText = "Back to home")
+	private WebElement backToPage;
+	
+	@FindBy(linkText = " Logout")
+	private WebElement adminLogout;
 
 	//initialization
-	public LoginPage(WebDriver driver)
+	public AdminPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -39,18 +49,32 @@ public class LoginPage {
 	public WebElement getSubmitBtn() {
 		return submitBtn;
 	}
-
+	
+	public WebElement getBackToPage() {
+		return backToPage;
+	}
+	
+	public WebElement getAdminLogout() {
+		return adminLogout;
+	}
 	/**
-	 * 
+	 * Login as Admin to the application
 	 * @param username
 	 * @param password
 	 * click on submit button
 	 */
 
-	public void loginToAppli(String username,String password)
+	public void loginToApp(String username,String password)
 	{
 		usernametxtEdt.sendKeys(username);
 		passwordtxtEdt.sendKeys(password);
 		submitBtn.click();
+	}
+	
+	/**
+	 * logout as admin
+	 */
+	public void AdminLogout() {
+		adminLogout.click();
 	}
 }
