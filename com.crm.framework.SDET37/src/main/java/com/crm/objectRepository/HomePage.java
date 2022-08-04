@@ -8,29 +8,45 @@ import org.openqa.selenium.support.PageFactory;
 import com.crm.genericUtilities.WebDriverUtility;
 /**
  * 
- * @author SanjayBabu
+ * @author Santosh Patil 
  *
  */
 public class HomePage extends WebDriverUtility{
 	//WebDriver driver;
-	//declaretion
-	@FindBy(linkText = "Organizations")
-	private WebElement organisationsLnk;
+	//declaration
+	@FindBy(linkText = "Admin Login")
+	private WebElement adminLink;
 
-	@FindBy(linkText = "Contacts")
-	private WebElement contactsLnk;
+	@FindBy(linkText = "Sign Up")
+	private WebElement signUpLink;
 
-	@FindBy(linkText = "Products")
-	private WebElement productsLnk;
+	@FindBy(linkText = "/ Sign In")
+	private WebElement signInLink;
+	
+	@FindBy(linkText = "Home")
+	private WebElement homeLink;
+	
+	@FindBy(linkText = "About")
+	private WebElement aboutLink;
 
-	@FindBy(xpath = "//img[@src='themes/softed/images/menuDnArrow.gif']")
-	private WebElement moreLnk;
+	@FindBy(linkText = "Tour Packages")
+	private WebElement tourPackageLink;
+	
+	@FindBy(linkText = "Privacy Policy")
+	private WebElement privacyPolicyLink;
+	
+	@FindBy(linkText = "Terms of Use")
+	private WebElement termsofUseLink;
+	
+	@FindBy(linkText = "Contact Us")
+	private WebElement contactUsLink;
 
-	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
-	private WebElement administratorLnk;
 
-	@FindBy(linkText = "Sign Out")
-	private WebElement signoutLnk;
+	@FindBy(linkText = " Enquiry ")
+	private WebElement enquiryLink;
+//
+//	@FindBy(linkText = "Sign Out")
+//	private WebElement signoutLnk;
 
 	//initialization
 	public HomePage(WebDriver driver)
@@ -41,34 +57,47 @@ public class HomePage extends WebDriverUtility{
 
 
 	//utilization
-	public WebElement getOrganisationsLnk() {
-		return organisationsLnk;
+	public WebElement getAdminLink() {
+		return adminLink;
 	}
 
-	public WebElement getContactsLnk() {
-		return contactsLnk;
+	public WebElement getSignUpLink() {
+		return signUpLink;
 	}
-
-	public WebElement getProductsLnk() {
-		return productsLnk;
-	}
-
-	public WebElement getMoreLnk() {
-		return moreLnk;
-	}
-
-	public WebElement getAdministratorLnk() {
-		return administratorLnk;
-	}
-
-	public WebElement getSignoutLnk() {
-		return signoutLnk;
-	}
-
 	
-	public void logout(WebDriver driver)
-	{                     
-		mouseOverAnElement(driver, administratorLnk);
-		signoutLnk.click();
+	public WebElement getSignInLink() {
+		return signInLink;
 	}
+	
+	public WebElement getHomeLink() {
+		return homeLink;
+	}
+	
+	public WebElement getAboutLink() {
+		return aboutLink;
+	}
+	
+	public WebElement getTourPackageLink() {
+		return tourPackageLink;
+	}
+
+	public WebElement getEnquiryLink() {
+		return enquiryLink;
+	}
+
+
+	public WebElement getPrivacyPolicyLink() {
+		return privacyPolicyLink;
+	}
+
+
+	public WebElement getTermsofUseLink() {
+		return termsofUseLink;
+	}
+
+
+	public WebElement getContactUsLink() {
+		return contactUsLink;
+	}
+	
 }
