@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class DashboardPage {
+	
 	//declaration
 	@FindBy(xpath = "//a[@class='sidebar-icon']")
 	private WebElement sideBarMenu;
