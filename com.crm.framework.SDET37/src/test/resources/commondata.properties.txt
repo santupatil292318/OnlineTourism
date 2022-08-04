@@ -1,4 +1,6 @@
-url http://localhost:8888
-username admin
-password admin
+url http://rmgtestingserver/domain/Online_Tourism_Management_System/
+adminUsername admin
+adminPassword Test@123
+username test@gmailcom
+userPassword test
 browser chrome

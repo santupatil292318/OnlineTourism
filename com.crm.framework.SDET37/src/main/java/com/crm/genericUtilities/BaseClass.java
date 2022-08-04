@@ -16,7 +16,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.crm.objectRepository.AdminPage;
-import com.crm.objectRepository.HomePage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -88,36 +87,36 @@ public class BaseClass
 	/**
 	 * login to application
 	 */
-	@BeforeMethod
+	@BeforeMethod(enabled = false)
 	public void loginToAppln()
 	{
-		String USERNAME = null;
+		String adminUSERNAME = null;
 		try {
-			USERNAME = fLib.getPropertKeyValue("username");
+			adminUSERNAME = fLib.getPropertKeyValue("adminUsername");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		String PASSWORD = null;
+		String adminPASSWORD = null;
 		try {
-			PASSWORD = fLib.getPropertKeyValue("password");
+			adminPASSWORD = fLib.getPropertKeyValue("adminPassword");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 
 		AdminPage lpage=new AdminPage(driver);
-		lpage.loginToApp(USERNAME, PASSWORD);
+		lpage.loginToApp(adminUSERNAME, adminPASSWORD);
 		System.out.println("Login successful");
 	}
 	/**
 	 * logout from application
 	 */
-	@AfterMethod
-//	public void logoutFromAppln()
-//	{
-//		HomePage hpage=new HomePage(driver);
-//		hpage.logout(driver);
-//		System.out.println("Logout successful");
-//	}
+	@AfterMethod(enabled = false)
+	public void logoutFromAppln()
+	{
+		AdminPage lpage=new AdminPage(driver);
+		lpage.AdminLogout();
+		System.out.println("Logout successful");
+	}
 	/**
 	 * close the browser
 	 */
