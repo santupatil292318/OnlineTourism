@@ -1,8 +1,15 @@
 package com.crm.objectRepository;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+/**
+ * 
+ * @author santu
+ *
+ */
 public class DashboardPage {
 	
 	//declaration
@@ -34,8 +41,12 @@ public class DashboardPage {
 	private WebElement ManagePages;
 
 	//initialization
+	public DashboardPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
 	
-	
+	//utilization
 	public WebElement getDashboard() {
 		return Dashboard;
 	}
