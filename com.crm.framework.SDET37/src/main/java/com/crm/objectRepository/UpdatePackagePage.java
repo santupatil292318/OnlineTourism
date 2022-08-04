@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
  *
  */
 public class UpdatePackagePage {
-
+	
 	//declaration
 	@FindBy(id = "packagename")
 	private WebElement packageNameEdt;
@@ -41,7 +41,6 @@ public class UpdatePackagePage {
 	{
 		PageFactory.initElements(driver, this);
 	}
-
 
 	//utilization
 	
