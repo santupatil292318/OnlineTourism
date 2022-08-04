@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.createOrganisation.ToCreateOrganisationTest">
+      <class name="com.crm.createUser.CreateAUserAndVerifyTest">
         <methods>
           <include name="logoutFromAppln"/>
-          <include name="createOrganisationTest"/>
-          <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
           <include name="closeTheBrowser"/>
+          <include name="createAUserAndVerifyTest"/>
           <include name="launchTheBrowser"/>
-          <include name="dbConfig"/>
         </methods>
-      </class> <!-- com.crm.createOrganisation.ToCreateOrganisationTest -->
+      </class> <!-- com.crm.createUser.CreateAUserAndVerifyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
