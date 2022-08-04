@@ -1,7 +1,9 @@
 package com.crm.objectRepository;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 /**
  * 
  * @author santu
@@ -23,6 +25,13 @@ public class UserSignUpPage {
 	
 	@FindBy(id = "submit")
 	public WebElement submitbtn;
+	
+	//initialization
+	public UserSignUpPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
 	
 	public WebElement getFullName()
 	{
@@ -56,7 +65,7 @@ public class UserSignUpPage {
 	 * @param Password
 	 */
 	
-	public void loginToApp(String FullName,String mobileNumber,String EmailId,String Password)
+	public void signUpToApp(String FullName,String mobileNumber,String EmailId,String Password)
 	{
 		fullName.sendKeys(FullName);
 		mobileNum.sendKeys(mobileNumber);
