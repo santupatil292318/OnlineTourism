@@ -12,7 +12,7 @@ import com.crm.genericUtilities.WebDriverUtility;
  *
  */
 public class CreateNewOrganisationPage extends WebDriverUtility{
-	//declaretion
+	//declaration
 	@FindBy(name = "accountname")
 	private WebElement organisationTextEdt;
 
