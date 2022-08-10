@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * 
- * @author Santosh Patil
+ * @author Syed zeeshan
  *
  */
 public class UserPage {
 	//declaration
-	@FindBy(id = "email") 
+	@FindBy(xpath = "//input[@placeholder='Enter your Email']") 
 	private WebElement emailText;
 	
 	@FindBy(id = "password") 
@@ -24,7 +24,7 @@ public class UserPage {
 	@FindBy(name = "signin") 
 	private WebElement signinBtn;
 	
-	@FindBy(linkText = "/ Logout")
+	@FindBy(xpath = "//a[text()='/ Logout']")
 	private WebElement userLogout;
 	
 	//initialization

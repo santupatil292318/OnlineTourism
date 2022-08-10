@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-05T12:16:59 IST" name="Default suite" finished-at="2022-08-05T12:17:27 IST" duration-ms="27594">
+  <suite started-at="2022-08-10T10:39:34 IST" name="Default suite" finished-at="2022-08-10T10:39:56 IST" duration-ms="21744">
     <groups>
     </groups>
-    <test started-at="2022-08-05T12:16:59 IST" name="Default test" finished-at="2022-08-05T12:17:27 IST" duration-ms="27594">
-      <class name="com.crm.createUser.CreateAUserAndVerifyTest">
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createUser.CreateAUserAndVerifyTest@2ddc9a9f]" started-at="2022-08-05T12:16:59 IST" name="launchTheBrowser" finished-at="2022-08-05T12:17:12 IST" duration-ms="12962" status="PASS">
+    <test started-at="2022-08-10T10:39:34 IST" name="Default test" finished-at="2022-08-10T10:39:56 IST" duration-ms="21744">
+      <class name="com.crm.createUser.CreateAUserAndVerifyInAdminTest">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createUser.CreateAUserAndVerifyInAdminTest@2ddc9a9f]" started-at="2022-08-10T10:39:34 IST" name="launchTheBrowser" finished-at="2022-08-10T10:39:48 IST" duration-ms="14281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method signature="createAUserAndVerifyTest()[pri:0, instance:com.crm.createUser.CreateAUserAndVerifyTest@2ddc9a9f]" started-at="2022-08-05T12:17:12 IST" name="createAUserAndVerifyTest" finished-at="2022-08-05T12:17:26 IST" duration-ms="13790" status="PASS">
+        <test-method signature="createAUserAndVerifyTest()[pri:0, instance:com.crm.createUser.CreateAUserAndVerifyInAdminTest@2ddc9a9f]" started-at="2022-08-10T10:39:49 IST" name="createAUserAndVerifyTest" finished-at="2022-08-10T10:39:55 IST" duration-ms="6647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAUserAndVerifyTest -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createUser.CreateAUserAndVerifyTest@2ddc9a9f]" started-at="2022-08-05T12:17:26 IST" name="closeTheBrowser" finished-at="2022-08-05T12:17:27 IST" duration-ms="741" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createUser.CreateAUserAndVerifyInAdminTest@2ddc9a9f]" started-at="2022-08-10T10:39:55 IST" name="closeTheBrowser" finished-at="2022-08-10T10:39:56 IST" duration-ms="711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-      </class> <!-- com.crm.createUser.CreateAUserAndVerifyTest -->
+      </class> <!-- com.crm.createUser.CreateAUserAndVerifyInAdminTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
