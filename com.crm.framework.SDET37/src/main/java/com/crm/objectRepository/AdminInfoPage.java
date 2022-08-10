@@ -5,6 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * 
+ * @author syed zeeshan
+ *
+ */
 public class AdminInfoPage {
 	//declaration
 	@FindBy(xpath = "//span[text()='Dashboard']")
@@ -27,6 +32,9 @@ public class AdminInfoPage {
 	
 	@FindBy(xpath = "//span[text()='Manage Pages']")
 	private WebElement managePagesEdt;
+	
+	@FindBy(xpath = "//span[text()='Administrator']")
+	private WebElement administratorEdt;
 	
 	//initialization
 	public AdminInfoPage(WebDriver driver) {
@@ -61,6 +69,10 @@ public class AdminInfoPage {
 
 	public WebElement getManagePagesEdt() {
 		return managePagesEdt;
+	}
+	
+	public WebElement getAdministratorEdt() {
+		return administratorEdt;
 	}
 
 }

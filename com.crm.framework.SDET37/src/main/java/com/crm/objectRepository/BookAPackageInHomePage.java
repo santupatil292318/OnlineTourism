@@ -5,10 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * 
+ * @author syed zeeshan
+ *
+ */
 public class BookAPackageInHomePage {
 	//declaration
 	@FindBy(xpath = "//a[text()=' Book']")
 	private WebElement bookbtnEdt;
+	
 	@FindBy(id = "datepicker")
 	private WebElement startDateEdt;
 	

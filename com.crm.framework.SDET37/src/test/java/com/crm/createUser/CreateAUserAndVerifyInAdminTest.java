@@ -1,6 +1,8 @@
 package com.crm.createUser;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.crm.genericUtilities.BaseClass;
 import com.crm.objectRepository.AdminInfoPage;
@@ -10,6 +12,11 @@ import com.crm.objectRepository.ManageUserPage;
 import com.crm.objectRepository.UserSignUpInfoPage;
 import com.crm.objectRepository.UserSignUpPage;
 
+/**
+ * 
+ * @author syed zeeshan
+ *
+ */
 public class CreateAUserAndVerifyInAdminTest extends BaseClass{
 	@Test
 	public void createAUserAndVerifyTest() {
@@ -43,13 +50,16 @@ public class CreateAUserAndVerifyInAdminTest extends BaseClass{
 		//verify confirmation message
 		UserSignUpInfoPage signUpInfo = new UserSignUpInfoPage(driver);
 		String actualText = signUpInfo.getConformationText().getText();
-		if(actualText.contains(confirmationText)) {
-			System.out.println("user is created");
-		}
-		else
-		{
-			System.out.println("user is not created");
-		}
+		SoftAssert Assert=new SoftAssert();
+		Assert.assertTrue(actualText.contains(confirmationText));
+		Reporter.log("user is created",true);
+//		if(actualText.contains(confirmationText)) {
+//			System.out.println("user is created");
+//		}
+//		else
+//		{
+//			System.out.println("user is not created");
+//		}
 		
 		homePage.getAdminLink().click();
 		AdminPage adminPage=new AdminPage(driver);
@@ -61,13 +71,20 @@ public class CreateAUserAndVerifyInAdminTest extends BaseClass{
 		ManageUserPage manageUser = new ManageUserPage(driver);
 		String actualName=manageUser.getManageUserText().getText();
 		System.out.println(actualName);
-		if(actualName.contains("testing")) {
-			System.out.println("user is created and verified in admin page");
-		}
-		else
-		{
-			System.out.println("user is not created and verified in admin page");
-		}
+		
+		Assert.assertTrue(actualText.contains("testing"));
+		Reporter.log("user is created and verified in admin page",true);
+		
+		adminInfo.getAdministratorEdt().click();
+		adminPage.getAdminLogout().click();
+		adminPage.getBackToPage().click();
+//		if(actualName.contains("testing")) {
+//			System.out.println("user is created and verified in admin page");
+//		}
+//		else
+//		{
+//			System.out.println("user is not created and verified in admin page");
+//		}
 
 	}
 

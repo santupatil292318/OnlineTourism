@@ -1,6 +1,8 @@
 package com.crm.createUser;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.crm.genericUtilities.BaseClass;
 import com.crm.objectRepository.HomePage;
@@ -43,13 +45,18 @@ public class CreateAUserAndVerifyTest extends BaseClass{
 		//verify confirmation message
 		UserSignUpInfoPage signUpInfo = new UserSignUpInfoPage(driver);
 		String actualText = signUpInfo.getConformationText().getText();
-		if(actualText.contains(confirmationText)) {
-			System.out.println("user is created");
-		}
-		else
-		{
-			System.out.println("user is not created");
-		}
+		SoftAssert Assert=new SoftAssert();
+		Assert.assertTrue(actualText.contains(confirmationText));
+		Reporter.log("user is created",true);
+		
+		
+//		if(actualText.contains(confirmationText)) {
+//			System.out.println("user is created");
+//		}
+//		else
+//		{
+//			System.out.println("user is not created");
+//		}
 			
 	}
 	
