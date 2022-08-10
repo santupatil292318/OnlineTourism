@@ -32,11 +32,11 @@ public class BaseClass
 	/**
 	 * connecting to database
 	 */
-//	@BeforeSuite
-//	public void dbConfig()
-//	{
-//		dLib.connectToDB();
-//	}
+	@BeforeSuite
+	public void dbConfig()
+	{
+		dLib.connectToDB();
+	}
 	/**
 	 * launching the browser
 	 * @throws Throwable
@@ -129,9 +129,9 @@ public class BaseClass
 	/**
 	 * close database configuration
 	 */
-//	@AfterSuite
-//	public void closeDBconfig()
-//	{
-//		dLib.closeDB();
-//	}
+	@AfterSuite
+	public void closeDBconfig()
+	{
+		dLib.closeDB();
+	}
 }
