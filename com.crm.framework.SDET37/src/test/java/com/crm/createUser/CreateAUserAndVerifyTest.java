@@ -50,13 +50,6 @@ public class CreateAUserAndVerifyTest extends BaseClass{
 		Reporter.log("user is created",true);
 		
 		
-//		if(actualText.contains(confirmationText)) {
-//			System.out.println("user is created");
-//		}
-//		else
-//		{
-//			System.out.println("user is not created");
-//		}
 			
 	}
 	

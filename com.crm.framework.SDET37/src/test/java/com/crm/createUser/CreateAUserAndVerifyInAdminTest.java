@@ -20,8 +20,10 @@ import com.crm.objectRepository.UserSignUpPage;
 public class CreateAUserAndVerifyInAdminTest extends BaseClass{
 	@Test
 	public void createAUserAndVerifyTest() {
-		
+		//fetch admin user name from properties file
 		String USERNAME = fLib.getPropertKeyValue("adminUsername");
+		
+		//fetch admin password from properties file
 		String PASSWORD = fLib.getPropertKeyValue("adminPassword");
 
 		//fetch the newUserName from excel sheet
@@ -38,7 +40,16 @@ public class CreateAUserAndVerifyInAdminTest extends BaseClass{
 
 		//fetch the phone Number from excel sheet
 		String confirmationText = eLib.readDataFromExcel("NewUser", 1, 4);
+		
+		//fetch user status from excel
+		String userStatus = eLib.readDataFromExcel("NewUser", 1, 5);
 
+		//fetch admin status from excel
+		String adminStatus = eLib.readDataFromExcel("NewUser", 1, 6);
+		
+		//fetch user  from excel		
+		String user = eLib.readDataFromExcel("NewUser", 1, 7);
+		
 		//click on signup link
 		HomePage homePage = new HomePage(driver);
 		homePage.getSignUpLink().click();
@@ -52,39 +63,31 @@ public class CreateAUserAndVerifyInAdminTest extends BaseClass{
 		String actualText = signUpInfo.getConformationText().getText();
 		SoftAssert Assert=new SoftAssert();
 		Assert.assertTrue(actualText.contains(confirmationText));
-		Reporter.log("user is created",true);
-//		if(actualText.contains(confirmationText)) {
-//			System.out.println("user is created");
-//		}
-//		else
-//		{
-//			System.out.println("user is not created");
-//		}
-		
+		Reporter.log(userStatus,true);
+
+		//click on admin link
 		homePage.getAdminLink().click();
+		
+		//login as admin
 		AdminPage adminPage=new AdminPage(driver);
 		adminPage.loginToApp(USERNAME, PASSWORD);
 		
+		//click on manage users
 		AdminInfoPage adminInfo=new AdminInfoPage(driver);
 		adminInfo.getManageUsersEdt().click();
 		
+		//verify the user is created in admin page
 		ManageUserPage manageUser = new ManageUserPage(driver);
 		String actualName=manageUser.getManageUserText().getText();
 		System.out.println(actualName);
 		
-		Assert.assertTrue(actualText.contains("testing"));
-		Reporter.log("user is created and verified in admin page",true);
+		Assert.assertTrue(actualText.contains(user));
+		Reporter.log(adminStatus,true);
 		
+		//logout from app
 		adminInfo.getAdministratorEdt().click();
 		adminPage.getAdminLogout().click();
 		adminPage.getBackToPage().click();
-//		if(actualName.contains("testing")) {
-//			System.out.println("user is created and verified in admin page");
-//		}
-//		else
-//		{
-//			System.out.println("user is not created and verified in admin page");
-//		}
 
 	}
 
