@@ -48,8 +48,6 @@ public class CreateAUserAndVerifyTest extends BaseClass{
 		SoftAssert Assert=new SoftAssert();
 		Assert.assertTrue(actualText.contains(confirmationText));
 		Reporter.log("user is created",true);
-		
-		
 			
 	}
 	

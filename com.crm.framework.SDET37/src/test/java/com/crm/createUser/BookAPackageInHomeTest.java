@@ -33,6 +33,9 @@ public class BookAPackageInHomeTest extends BaseClass{
 		//fetch the confirm text from excel sheet
 		String confirmText = eLib.readDataFromExcel("BookUserInHome", 1, 1);
 		
+		//fetch status 
+		String status = eLib.readDataFromExcel("BookUserInHome", 1, 2);
+		
 		//click on view package in home page
 		HomePage homePage = new HomePage(driver);
 		homePage.getViewPackage().click();
@@ -83,7 +86,7 @@ public class BookAPackageInHomeTest extends BaseClass{
 		String actualText = bookAPackageInfo.getconfirmText().getText();
 		SoftAssert Assert=new SoftAssert();
 		Assert.assertTrue(actualText.contains(confirmText));
-		Reporter.log("pass package is booked",true);
+		Reporter.log(status,true);
 		
 		//logout 
 		userPage.getUserLogout().click();
