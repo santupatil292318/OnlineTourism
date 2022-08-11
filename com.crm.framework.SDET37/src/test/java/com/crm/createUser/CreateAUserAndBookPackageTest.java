@@ -16,6 +16,11 @@ import com.crm.objectRepository.UserPage;
 import com.crm.objectRepository.UserSignUpInfoPage;
 import com.crm.objectRepository.UserSignUpPage;
 
+/**
+ * 
+ * @author syed zeeshan
+ *
+ */
 public class CreateAUserAndBookPackageTest extends BaseClass{
 	@Test
 	public void createAUserAndBookPackageTest() {
