@@ -16,8 +16,11 @@ public class DashboardPage {
 	@FindBy(xpath = "//a[@class='sidebar-icon']")
 	private WebElement sideBarMenu;
 	
-	@FindBy(xpath = "images/User-icon.png")
+	@FindBy(xpath = "//img[@src='images/User-icon.png']")
 	private WebElement Administration;
+	
+	@FindBy(xpath = "//a[@href='logout.php']")
+	private WebElement logoutBtn;
 	
 	@FindBy(linkText = "Dashboard")
 	private WebElement Dashboard;
@@ -82,6 +85,15 @@ public class DashboardPage {
 	public WebElement getManagePages() {
 		return ManagePages;
 	}
+
+	public WebElement getLogoutBtn() {
+		return logoutBtn;
+	}
 	
+	public void logoutAdminInDashboard()
+	{
+		Administration.click();
+		logoutBtn.click();
+	}
 	
 }

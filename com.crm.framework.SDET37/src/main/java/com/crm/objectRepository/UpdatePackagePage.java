@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 /**
  * 
- * @author santu
+ * @author neetha
  *
  */
 public class UpdatePackagePage {
@@ -75,5 +75,33 @@ public class UpdatePackagePage {
 	public WebElement getUpdateBtn() {
 		return updateBtn;
 	}
+	public void packageNameEDT(String pkgName) {
+		packageNameEdt.clear();
+		packageNameEdt.sendKeys(pkgName);
+		
+	}
+	public void packageTypeEDT(String PkgType) {
+		packageTypeEdt.clear();
+		packageTypeEdt.sendKeys(PkgType);
+	}
 	
+	public void packageLocationEDT( String PkgLoc) 
+	{
+		packageLocationEdt.clear();
+		packageLocationEdt.sendKeys(PkgLoc);
+	}
+	public void PackagepriceEDT(String PkgPrice) {
+		packagepriceEdt.clear();
+		packagepriceEdt.sendKeys(PkgPrice);
+	}
+	public void PackagefeatureEDT(String PkgFeature) {
+		packagefeaturesEdt.clear();
+		packagefeaturesEdt.sendKeys(PkgFeature);
+	}
+	public void PackagedetailsEDT(String PkgDetails) {
+	    packagedetalsEdt.clear();
+	    packagedetalsEdt.sendKeys(PkgDetails);
+	}
 }
+	
+

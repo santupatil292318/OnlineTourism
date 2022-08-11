@@ -3,13 +3,58 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="managePackages.ManagePackageTest">
+=======
+<<<<<<< HEAD
+      <class name="enquiryForm.CreateEnquiryFormTest">
+=======
+<<<<<<< HEAD
+      <class name="com.crm.dashBoard.ToVerifymanageissuesInAdminTest">
+=======
+      <class name="com.crm.createUser.CreateAUserAndBookPackageTest">
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
         <methods>
+<<<<<<< HEAD
           <include name="managePackageTest"/>
+=======
+<<<<<<< HEAD
+=======
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="toVerifymanageissuesInAdminTest"/>
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
           <include name="closeTheBrowser"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          <include name="CreateEnquiryForm"/>
+=======
+<<<<<<< HEAD
+=======
+          <include name="createAUserAndBookPackageTest"/>
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
           <include name="launchTheBrowser"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- managePackages.ManagePackageTest -->
+=======
+<<<<<<< HEAD
+      </class> <!-- enquiryForm.CreateEnquiryFormTest -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.crm.dashBoard.ToVerifymanageissuesInAdminTest -->
+=======
+      </class> <!-- com.crm.createUser.CreateAUserAndBookPackageTest -->
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

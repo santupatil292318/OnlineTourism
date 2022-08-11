@@ -5,6 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * 
+ * @author syed zeeshan
+ *
+ */
 public class UserSignUpInfoPage {
 	//declaration
 	@FindBy(xpath = "//h3[text()=' Confirmation']")

@@ -31,12 +31,20 @@ public class BaseClass
 
 	/**
 	 * connecting to database
+<<<<<<< HEAD
 //	 */
-//	@BeforeSuite
-//	public void dbConfig()
-//	{
-//		dLib.connectToDB();
-//	}
+	//	@BeforeSuite
+	//	public void dbConfig()
+	//	{
+	//		dLib.connectToDB();
+	//	}
+
+	/*@BeforeSuite
+	public void dbConfig()
+	{
+		dLib.connectToDB();
+	}
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
 	/**
 	 * launching the browser
 	 * @throws Throwable
@@ -129,9 +137,18 @@ public class BaseClass
 	/**
 	 * close database configuration
 	 */
-//	@AfterSuite
-//	public void closeDBconfig()
-//	{
-//		dLib.closeDB();
-//	}
+
+	//	@AfterSuite
+	//	public void closeDBconfig()
+	//	{
+	//		dLib.closeDB();
+	//	}
 }
+
+//*@AfterSuite
+//public void closeDBconfig()
+//{
+//	dLib.closeDB();
+//}
+
+

@@ -7,6 +7,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -40,7 +41,8 @@ public class ExcelUtility {
 		Sheet sheet = workbook.getSheet(sheetName);
 		Row row = sheet.getRow(rowNum);
 		Cell cell = row.getCell(cellNum);
-		String data = cell.toString();
+		DataFormatter format=new DataFormatter();
+		String data = format.formatCellValue(cell);
 		return data;
 	}
 	/**
