@@ -42,8 +42,13 @@ public class HomePage extends WebDriverUtility{
 	private WebElement contactUsLink;
 
 
-	@FindBy(xpath = "//a[text()=' Enquiry ']")
+
+	@FindBy(xpath  = "//a[text()=' Enquiry ']")
+
 	private WebElement enquiryLink;
+	
+	@FindBy(xpath = "//a[text()='View More Packages']")
+	private WebElement viewPackage;
 //
 //	@FindBy(linkText = "Sign Out")
 //	private WebElement signoutLnk;
@@ -98,6 +103,10 @@ public class HomePage extends WebDriverUtility{
 
 	public WebElement getContactUsLink() {
 		return contactUsLink;
+	}
+	
+	public WebElement getViewPackage() {
+		return viewPackage;
 	}
 	
 }
