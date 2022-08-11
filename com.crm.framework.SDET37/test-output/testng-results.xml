@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[user is created]]>
+    </line>
+    <line>
+      <![CDATA[user is created and verified in admin page]]>
+    </line>
+    <line>
+      <![CDATA[pass package is booked]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-08-11T15:58:50 IST" name="Default suite" finished-at="2022-08-11T15:59:27 IST" duration-ms="37027">
+    <groups>
+    </groups>
+    <test started-at="2022-08-11T15:58:50 IST" name="Default test" finished-at="2022-08-11T15:59:27 IST" duration-ms="37027">
+      <class name="com.crm.createUser.CreateAUserAndBookPackageTest">
+        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.createUser.CreateAUserAndBookPackageTest@54c5a2ff]" started-at="2022-08-11T15:58:50 IST" name="dbConfig" finished-at="2022-08-11T15:58:50 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConfig -->
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createUser.CreateAUserAndBookPackageTest@54c5a2ff]" started-at="2022-08-11T15:58:50 IST" name="launchTheBrowser" finished-at="2022-08-11T15:59:03 IST" duration-ms="13274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method signature="createAUserAndBookPackageTest()[pri:0, instance:com.crm.createUser.CreateAUserAndBookPackageTest@54c5a2ff]" started-at="2022-08-11T15:59:03 IST" name="createAUserAndBookPackageTest" finished-at="2022-08-11T15:59:25 IST" duration-ms="22097" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[user is created]]>
+            </line>
+            <line>
+              <![CDATA[user is created and verified in admin page]]>
+            </line>
+            <line>
+              <![CDATA[pass package is booked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAUserAndBookPackageTest -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createUser.CreateAUserAndBookPackageTest@54c5a2ff]" started-at="2022-08-11T15:59:25 IST" name="closeTheBrowser" finished-at="2022-08-11T15:59:27 IST" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="closeDBconfig()[pri:0, instance:com.crm.createUser.CreateAUserAndBookPackageTest@54c5a2ff]" started-at="2022-08-11T15:59:27 IST" name="closeDBconfig" finished-at="2022-08-11T15:59:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBconfig -->
+      </class> <!-- com.crm.createUser.CreateAUserAndBookPackageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

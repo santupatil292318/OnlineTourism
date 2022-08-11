@@ -10,19 +10,21 @@ import org.openqa.selenium.support.PageFactory;
  * @author syed zeeshan
  *
  */
-public class UserSignUpInfoPage {
+public class ManageUserPage {
 	//declaration
-	@FindBy(xpath = "//h3[text()=' Confirmation']")
-	private WebElement conformationText;
+	@FindBy(xpath = "//table[@id='table']")
+	private WebElement manageUserText;
 	
 	//initialization
-	public  UserSignUpInfoPage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+	public ManageUserPage(WebDriver driver) {
+		PageFactory.initElements(driver,this );
+	}
+
+	//utilization
+	public WebElement getManageUserText() {
+		return manageUserText;
 	}
 	
-	//utilization
-	public WebElement getConformationText() {
-		return conformationText;
-	}
+	
 
 }
