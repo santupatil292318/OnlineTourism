@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class UserPage {
 	//declaration
-	@FindBy(id = "email") 
+	@FindBy(xpath = "//input[@placeholder='Enter your Email']") 
 	private WebElement emailText;
 	
 	@FindBy(id = "password") 
