@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * 
- * @author Santosh Patil
+ * @author Syed zeeshan
  *
  */
 public class UserPage {
@@ -24,7 +24,7 @@ public class UserPage {
 	@FindBy(name = "signin") 
 	private WebElement signinBtn;
 	
-	@FindBy(linkText = "/ Logout")
+	@FindBy(xpath = "//a[text()='/ Logout']")
 	private WebElement userLogout;
 	
 	//initialization

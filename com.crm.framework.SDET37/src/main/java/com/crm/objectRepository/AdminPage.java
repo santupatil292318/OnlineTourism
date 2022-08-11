@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * 
- * @author Santosh Patil
+ * @author Syed Zeeshan
  *
  */
 public class AdminPage {
@@ -26,7 +26,7 @@ public class AdminPage {
 	@FindBy(linkText = "Back to home")
 	private WebElement backToPage;
 	
-	@FindBy(linkText = " Logout")
+	@FindBy(xpath = "//a[text()=' Logout']")
 	private WebElement adminLogout;
 
 	//initialization

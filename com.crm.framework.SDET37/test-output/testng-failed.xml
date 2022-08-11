@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.crm.dashBoard.ToVerifymanageissuesInAdminTest">
         <methods>
           <include name="logoutFromAppln"/>
@@ -14,6 +15,19 @@
           <include name="dbConfig"/>
         </methods>
       </class> <!-- com.crm.dashBoard.ToVerifymanageissuesInAdminTest -->
+=======
+      <class name="com.crm.createUser.CreateAUserAndBookPackageTest">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="createAUserAndBookPackageTest"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.createUser.CreateAUserAndBookPackageTest -->
+>>>>>>> branch 'collabrate' of https://github.com/santupatil292318/OnlineTourism.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

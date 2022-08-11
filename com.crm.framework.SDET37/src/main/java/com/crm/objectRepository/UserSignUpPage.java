@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 /**
  * 
- * @author santu
+ * @author syed zeeshan
  *
  */
 public class UserSignUpPage {
