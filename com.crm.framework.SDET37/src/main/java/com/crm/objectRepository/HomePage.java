@@ -22,31 +22,31 @@ public class HomePage extends WebDriverUtility{
 
 	@FindBy(linkText = "/ Sign In")
 	private WebElement signInLink;
-	
+
 	@FindBy(linkText = "Home")
 	private WebElement homeLink;
-	
+
 	@FindBy(linkText = "About")
 	private WebElement aboutLink;
 
 	@FindBy(linkText = "Tour Packages")
 	private WebElement tourPackageLink;
-	
+
 	@FindBy(linkText = "Privacy Policy")
 	private WebElement privacyPolicyLink;
-	
+
 	@FindBy(linkText = "Terms of Use")
 	private WebElement termsofUseLink;
-	
+
 	@FindBy(linkText = "Contact Us")
 	private WebElement contactUsLink;
 
 
 	@FindBy(linkText = " Enquiry ")
 	private WebElement enquiryLink;
-//
-//	@FindBy(linkText = "Sign Out")
-//	private WebElement signoutLnk;
+	//
+	//	@FindBy(linkText = "Sign Out")
+	//	private WebElement signoutLnk;
 
 	//initialization
 	public HomePage(WebDriver driver)
@@ -64,19 +64,19 @@ public class HomePage extends WebDriverUtility{
 	public WebElement getSignUpLink() {
 		return signUpLink;
 	}
-	
+
 	public WebElement getSignInLink() {
 		return signInLink;
 	}
-	
+
 	public WebElement getHomeLink() {
 		return homeLink;
 	}
-	
+
 	public WebElement getAboutLink() {
 		return aboutLink;
 	}
-	
+
 	public WebElement getTourPackageLink() {
 		return tourPackageLink;
 	}
@@ -100,4 +100,5 @@ public class HomePage extends WebDriverUtility{
 		return contactUsLink;
 	}
 	
+
 }

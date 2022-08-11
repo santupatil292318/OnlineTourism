@@ -12,4 +12,6 @@ public interface IConstants
 	int implicitlyWaitDuration=10;
 	int explicitWaitDuration=10;
 	int scriptTimeOutDuration=10;
+	String imagepath = "C:\\Users\\Srimanth\\git\\OnlineTourism\\com.crm.framework.SDET37\\src\\test\\resources\\TajMahal.jpg";
+    String imgpat="C:\\Users\\Srimanth\\git\\OnlineTourism\\com.crm.framework.SDET37\\src\\test\\resources\\london.jpg";
 }

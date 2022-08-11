@@ -25,8 +25,8 @@ public class ToCreateOrganisationTest extends BaseClass{
 
 		//click on organization link
 		HomePage homePage = new HomePage(driver);
-//		homePage.getOrganisationsLnk().click();
-		//Assert.fail();
+		// homePage.getOrganisationsLnk().click();
+		Assert.fail();
 
 		//click on create organization icon
 		OrganisationPage organisationPage=new OrganisationPage(driver);
