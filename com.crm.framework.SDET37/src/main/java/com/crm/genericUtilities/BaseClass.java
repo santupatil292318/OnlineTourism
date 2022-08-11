@@ -32,7 +32,7 @@ public class BaseClass
 	/**
 	 * connecting to database
 	 */
-	@BeforeSuite
+	/*@BeforeSuite
 	public void dbConfig()
 	{
 		dLib.connectToDB();
@@ -87,7 +87,7 @@ public class BaseClass
 	/**
 	 * login to application
 	 */
-	@BeforeMethod(enabled = false)
+	/*@BeforeMethod(enabled = false)
 	public void loginToAppln()
 	{
 		String adminUSERNAME = null;
@@ -110,7 +110,7 @@ public class BaseClass
 	/**
 	 * logout from application
 	 */
-	@AfterMethod(enabled = false)
+	/*@AfterMethod(enabled = false)
 	public void logoutFromAppln()
 	{
 		AdminPage lpage=new AdminPage(driver);
@@ -129,9 +129,9 @@ public class BaseClass
 	/**
 	 * close database configuration
 	 */
-	@AfterSuite
-	public void closeDBconfig()
-	{
-		dLib.closeDB();
-	}
+	//*@AfterSuite
+	//public void closeDBconfig()
+	//{
+	//	dLib.closeDB();
+	//}
 }

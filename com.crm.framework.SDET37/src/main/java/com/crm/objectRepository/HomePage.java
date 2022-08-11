@@ -42,7 +42,7 @@ public class HomePage extends WebDriverUtility{
 	private WebElement contactUsLink;
 
 
-	@FindBy(linkText = " Enquiry ")
+	@FindBy(xpath = "//a[text()=' Enquiry ']")
 	private WebElement enquiryLink;
 //
 //	@FindBy(linkText = "Sign Out")
